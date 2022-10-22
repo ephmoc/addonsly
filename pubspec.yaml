@@ -1,0 +1,21 @@
+name: addonsly
+description: Helpful Flutter addons
+version: 0.0.1
+
+homepage: https://github.com/ephmoc/addonsly
+repository: https://github.com/ephmoc/addonsly
+issue_tracker: https://github.com/ephmoc/addonsly/issues
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  collection: ^1.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
