@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Widgets extensions', () {
-    final List<List<Widget>> lists = [
+    final lists = <List<Widget>>[
       List.generate(3, (index) => Text('$index')),
       [const Text('')],
       [],
@@ -12,7 +12,7 @@ void main() {
     test('Adding separator', () {
       const separator = Divider();
       final results = lists.map((l) => l.joinWithSeparator(separator)).toList();
-      final List<List<Widget>> expected = [
+      final expected = <List<Widget>>[
         [
           const Text('0'),
           separator,
@@ -27,8 +27,10 @@ void main() {
       for (final result in results.asMap().entries.toList()) {
         expect(result.value.length, equals(expected[result.key].length));
         if (result.value.isNotEmpty) {
-          expect(result.value.first.runtimeType,
-              equals(expected[result.key].first.runtimeType));
+          expect(
+            result.value.first.runtimeType,
+            equals(expected[result.key].first.runtimeType),
+          );
         }
         if (result.value.length > 1) {
           expect(result.value[1].runtimeType, equals(separator.runtimeType));

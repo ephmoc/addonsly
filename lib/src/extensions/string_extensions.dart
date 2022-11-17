@@ -2,7 +2,7 @@ import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
 /// A collection of useful extensions on [String]
-extension StringExtension on String {
+extension AddonslyString on String {
   /// A getter that converts the first letter of a [String] into uppercase
   /// and the remaining letters of the [String] into lowercase
   /// if the [String] is not empty.
@@ -20,7 +20,8 @@ extension StringExtension on String {
   String? get firstCapitalLetter => characters.firstOrNull?.toUpperCase();
 }
 
-extension NullIfEmpty on String? {
+/// A collection of useful extensions on [String?]
+extension AddonslyNullableString on String? {
   /// Returns null if a [String] is empty
   String? get nullify {
     if (this?.isEmpty ?? true) {

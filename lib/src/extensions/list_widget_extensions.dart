@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 /// A collection of useful extensions on [List<Widget>]
-extension JoinedWidgets on List<Widget> {
+extension AddonslyWidgetList on List<Widget> {
   /// Adds a specified separator [Widget] between Widgets in a list.
   /// This can be useful to add some spacer or other kind of divider between
   /// Widgets without the need of writing it multiple times and cluttering the

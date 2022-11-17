@@ -36,7 +36,8 @@ jobs:
       # want to change this to 'flutter test'.
       - name: Run tests
         run: flutter test
-
+      - name: Codecov
+        uses: codecov/codecov-action@v3.1.1
       - name: covarage
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:

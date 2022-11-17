@@ -1,6 +1,5 @@
+import 'package:addonsly/src/constants/paddings.dart';
 import 'package:flutter/widgets.dart';
-
-import '../constants/paddings.dart';
 
 /// [VSpacer] creates a vertical separation between Widgets
 /// the same way you would use a SizedBox, but with predefined values

@@ -1,6 +1,6 @@
 name: addonsly
 description: Helpful Flutter addons like widgets, constants, extensions, etc.
-version: 0.0.2
+version: 0.0.3
 
 homepage: https://github.com/ephmoc/addonsly
 repository: https://github.com/ephmoc/addonsly
@@ -11,11 +11,12 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  collection: ^1.16.0
   flutter:
     sdk: flutter
-  collection: ^1.16.0
 
 dev_dependencies:
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  very_good_analysis: ^3.1.0

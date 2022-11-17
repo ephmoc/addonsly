@@ -3,10 +3,10 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('String extensions', () {
-    const List<String> texts = ['john doe', '', 'a', '9'];
+    const texts = <String>['john doe', '', 'a', '9'];
     test('Capitalization', () {
-      const List<String> expected = ['John doe', '', 'A', '9'];
-      final List<String> results = texts.map((t) => t.capitalized).toList();
+      const expected = <String>['John doe', '', 'A', '9'];
+      final results = texts.map((t) => t.capitalized).toList();
 
       for (final result in results.asMap().entries) {
         expect(result.value.length, equals(texts[result.key].length));
@@ -15,9 +15,8 @@ void main() {
     });
 
     test('First letter capitalized', () {
-      const List<String?> expected = ['J', null, 'A', '9'];
-      final List<String?> results =
-          texts.map((t) => t.firstCapitalLetter).toList();
+      const expected = <String?>['J', null, 'A', '9'];
+      final results = texts.map((t) => t.firstCapitalLetter).toList();
 
       for (final result in results.asMap().entries) {
         if (result.value?.isNotEmpty ?? false) {
@@ -31,10 +30,10 @@ void main() {
   });
 
   group('Nullable String extensions', () {
-    const List<String?> texts = ['john doe', '', null, '9'];
+    const texts = <String?>['john doe', '', null, '9'];
     test('nullify', () {
-      const List<String?> expected = ['john doe', null, null, '9'];
-      final List<String?> results = texts.map((t) => t.nullify).toList();
+      const expected = <String?>['john doe', null, null, '9'];
+      final results = texts.map((t) => t.nullify).toList();
 
       for (final result in results.asMap().entries) {
         expect(result.value, equals(expected[result.key]));
