@@ -14,7 +14,9 @@ The package includes the following features:
 
 ### Widgets
 
-Horizontal nad vertical spacers for UI content layout that extends `SizedBox` widget.
+- Horizontal and vertical spacers (HSpacer and VSpacer) for UI content layout that extends
+  `SizedBox` widget,
+- `RowWithColumns` widget that contains a given number of widgets separated by a spacer
 
 ### Extensions
 

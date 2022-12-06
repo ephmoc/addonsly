@@ -1,3 +1,7 @@
+## 0.0.4
+
+* Added `RowWithColumns` widget that contains a given number of widgets separated by a spacer
+
 ## 0.0.3
 
 * Minor improvements
