@@ -9,9 +9,9 @@ class RowWithColumns extends StatelessWidget {
   /// columns in the row, `spacer` is an optional [Widget] the will be placed
   /// between each widget from the list (default: `HSpacer.semiNormal()`).
   const RowWithColumns({
-    super.key,
     required this.children,
     required this.columnCount,
+    super.key,
     this.spacer,
     this.crossAxisAlignment,
     this.mainAxisAlignment,
