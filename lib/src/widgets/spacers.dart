@@ -28,7 +28,7 @@ import 'package:flutter/widgets.dart';
 ///  * [HSpacer]
 class VSpacer extends SizedBox {
   /// [VSpacer] with custom paddings
-  const VSpacer({super.key, required double super.height});
+  const VSpacer({required double super.height, super.key});
 
   /// [VSpacer] with [2.0] as padding
   factory VSpacer.xxSmall() => const VSpacer(height: Paddings.xxSmall);
@@ -95,7 +95,7 @@ class VSpacer extends SizedBox {
 ///  * [VSpacer]
 class HSpacer extends SizedBox {
   /// [HSpacer] with custom paddings
-  const HSpacer({super.key, required double super.width});
+  const HSpacer({required double super.width, super.key});
 
   /// [HSpacer] with [2.0] as padding
   factory HSpacer.xxSmall() => const HSpacer(width: Paddings.xxSmall);
